@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.nt.beans.WishMessageGenerator;
 
-public class SetterInjectionTest {
+public class AutowiredInjectionTest {
 	public static void main(String[] args) {
 		//create IOC Container
 		ClassPathXmlApplicationContext ctx=new ClassPathXmlApplicationContext("com/nt/cfgs/applicationContext.xml");
