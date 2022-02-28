@@ -12,20 +12,10 @@ import org.springframework.stereotype.Component;
 
 @PropertySource("com/nt/commos/info.properties")
 public final class DTDC implements Courier {
-	@Value("${per.name}")
-	private String name;
-	@Value("${per.age}")
-	private int age;
-	@Value("${os.name}")
-	private String os;
-	
-	@Value("${Path}")
-	private String Path;
+
 	public DTDC() {
 	System.out.println("DTDC::0-param constructor");
 	}
-
-	
 
 	@Override
 	public String deliver(int oid) {
@@ -33,8 +23,5 @@ public final class DTDC implements Courier {
 		return oid+"order id order is delivered by DTDC";
 	}
 	
-	@Override
-	public String toString() {
-		return "DTDC [name=" + name + ", age=" + age + ", os=" + os + ", path=" + Path + "]";
-	}
+	
 }
